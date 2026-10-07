@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barnowl | Premium Men's Trousers</title>
+<meta name="description" content="Barnowl makes premium men's trousers in comfortable, durable fabrics. Browse the collection and order through Instagram.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { bark:'#3A2E27', moss:'#5B6649', stone:'#D8D0C2', linen:'#F7F3EC', paper:'#FFFDF9', clay:'#8A7B6C' },
+    fontFamily: { serif:['"Instrument Serif"','Georgia','serif'], sans:['"DM Sans"','system-ui','sans-serif'] }
+  } }
+}
+</script>
+<style>
+  body { background:#FFFDF9; color:#3A2E27; }
+  :focus-visible { outline:2px solid #5B6649; outline-offset:3px; }
+  .arch { border-radius: 999px 999px 1.25rem 1.25rem; }
+  .hero-in { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+  .hero-in.d2 { animation-delay:.15s; }
+  @keyframes rise { from { opacity:0; transform:translateY(18px);} to { opacity:1; transform:none;} }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto !important; }
+    .hero-in { animation:none; }
+    * { transition-duration:.01ms !important; }
+  }
+  section[id] { scroll-margin-top: 5rem; }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- Navigation -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#top" class="flex items-center gap-2 font-serif text-2xl tracking-tight" aria-label="Barnowl home">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M6 9c3 0 5 1 7 3 1-.5 2-.7 3-.7s2 .2 3 .7c2-2 4-3 7-3-.5 3-1 5-2 6 1 6-3 12-8 12S7 21 8 15C7 14 6.500 12 6 9Z" fill="#3A2E27"/>
+        <circle cx="12.500" cy="15" r="2.300" fill="#F7F3EC"/><circle cx="19.500" cy="15" r="2.300" fill="#F7F3EC"/>
+        <circle cx="12.500" cy="15" r="1" fill="#3A2E27"/><circle cx="19.500" cy="15" r="1" fill="#3A2E27"/>
+        <path d="m16 17-1.500 2.500h3L16 17Z" fill="#5B6649"/>
+      </svg>
+      Barnowl
+    </a>
+    <nav class="hidden items-center gap-8 text-sm font-medium md:flex" aria-label="Primary">
+      <a href="#collection" class="transition hover:text-moss">Collection</a>
+      <a href="#about" class="transition hover:text-moss">About us</a>
+      <a data-ig href="#" target="_blank" rel="noopener" class="rounded-full border border-bark px-4 py-2 transition hover:bg-bark hover:text-linen">Instagram</a>
+    </nav>
+    <button id="menuBtn" class="p-2 md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.800" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden border-t border-stone bg-paper/95 px-5 pb-5 backdrop-blur md:hidden">
+    <a href="#collection" class="block py-3 text-lg">Collection</a>
+    <a href="#about" class="block py-3 text-lg">About us</a>
+    <a data-ig href="#" target="_blank" rel="noopener" class="block py-3 text-lg">Contact on Instagram</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- Hero -->
+<section class="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-16 pt-28 md:grid-cols-2 md:gap-14 md:pb-24 md:pt-36">
+  <div>
+    <h1 class="hero-in font-serif text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">Crafted for comfort.<br>Tailored for distinction.</h1>
+    <p class="hero-in d2 mt-6 max-w-md text-lg leading-relaxed text-bark/80">Premium men's trousers cut from breathable, long-wearing fabrics. Made to look sharp at nine and feel easy at nine at night.</p>
+    <div class="hero-in d2 mt-8 flex flex-wrap gap-3">
+      <a href="#collection" class="rounded-full bg-bark px-7 py-3 font-medium text-linen transition hover:bg-moss">Shop the collection</a>
+      <a data-ig href="#" target="_blank" rel="noopener" class="rounded-full border border-bark px-7 py-3 font-medium transition hover:bg-bark hover:text-linen">Visit Instagram</a>
+    </div>
+  </div>
+  <div class="hero-in d2 mx-auto w-full max-w-sm md:max-w-none">
+    <div class="arch overflow-hidden bg-stone">
+      <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80"
+           alt="Man wearing tailored trousers" class="aspect-[4/5] w-full object-cover" loading="eager" data-fallback>
+    </div>
+  </div>
+</section>
+
+<!-- Collection -->
+<section id="collection" class="bg-linen py-16 md:py-24">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="mb-10 max-w-xl">
+      <h2 class="font-serif text-4xl md:text-5xl">The collection</h2>
+      <p class="mt-3 text-bark/75">Six cuts, one standard of finish. Pick your fit, then message us on Instagram to order.</p>
+    </div>
+    <div id="grid" class="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:py-24">
+  <div class="order-2 md:order-1">
+    <h2 class="font-serif text-4xl md:text-5xl">Built slowly, worn daily.</h2>
+    <div class="mt-6 max-w-prose space-y-4 text-lg leading-relaxed text-bark/85">
+      <p>Barnowl started with a simple frustration: good trousers were either stiff and expensive or soft and short-lived. We wanted a pair that looked right in a meeting and still felt easy on a long commute.</p>
+      <p>Every style begins with the fabric. We favour breathable cotton, linen blends and recycled fibres, then spend our time on the parts people notice after a few months: seams, waistbands and how the hem falls.</p>
+      <p>We are a small team selling directly through Instagram, which means you talk to the people who made your trousers, and we make fewer pieces, better.</p>
+    </div>
+    <dl class="mt-8 grid grid-cols-3 gap-4 border-t border-stone pt-6 text-sm">
+      <div><dt class="font-semibold">Fabric</dt><dd class="mt-1 text-bark/70">Breathable, responsibly sourced</dd></div>
+      <div><dt class="font-semibold">Fit</dt><dd class="mt-1 text-bark/70">Comfort-first tailoring</dd></div>
+      <div><dt class="font-semibold">Scale</dt><dd class="mt-1 text-bark/70">Small batches</dd></div>
+    </dl>
+  </div>
+  <div class="order-1 md:order-2">
+    <div class="relative">
+      <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone">
+        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=900&q=80" alt="Folded fabric and tailoring tools" class="h-full w-full object-cover" loading="lazy" data-fallback>
+      </div>
+      <div class="absolute -bottom-5 -left-3 rounded-xl bg-moss px-5 py-4 text-linen shadow-lg sm:-left-6">
+        <p class="font-serif text-2xl leading-tight">Fewer pieces,<br>better made.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-bark text-linen">
+  <div class="mx-auto max-w-6xl px-5 py-14">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <p class="font-serif text-3xl">Barnowl</p>
+        <p class="mt-3 max-w-xs text-sm text-linen/70">Premium men's trousers, made for comfort and built to last.</p>
+      </div>
+      <div class="text-sm">
+        <p class="font-semibold">Get in touch</p>
+        <ul class="mt-3 space-y-2 text-linen/80">
+          <li><a data-ig data-handle href="#" target="_blank" rel="noopener" class="underline-offset-4 hover:underline"></a></li>
+          <li><a data-mail href="#" class="underline-offset-4 hover:underline"></a></li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-linen/20 p-5 text-sm leading-relaxed text-linen/85">
+        Orders are currently handled through Instagram Direct Message. You talk to us directly, we confirm your size and details, and payment is arranged in the chat.
+      </div>
+    </div>
+    <p class="mt-12 border-t border-linen/15 pt-6 text-xs text-linen/60">&copy; <span id="yr"></span> Barnowl. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+/* ---- Edit these ---- */
+const CONFIG = {
+  handle: 'barnowl.official',          // Instagram username, no @
+  email: 'support@barnowl.example',    // support email
+  currency: '₹'
+};
+const PRODUCTS = [
+  { name:'Classic Pleated Chinos', fabric:'Cotton twill, 98% cotton / 2% elastane', price:2499, sizes:['S','M','L','XL'], img:'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80' },
+  { name:'Slim-Fit Everyday Trousers', fabric:'Stretch cotton blend, wrinkle resistant', price:2199, sizes:['S','M','L','XL'], img:'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80' },
+  { name:'Relaxed Linen Blend', fabric:'55% linen / 45% cotton, lightweight', price:2799, sizes:['M','L','XL'], img:'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=80' },
+  { name:'Urban Cargo Trousers', fabric:'Ripstop cotton, six utility pockets', price:2899, sizes:['S','M','L','XL','XXL'], img:'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80' },
+  { name:'Tailored Wool Blend Trousers', fabric:'Wool-poly blend, half-lined', price:3499, sizes:['S','M','L'], img:'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80' },
+  { name:'Drawstring Travel Pants', fabric:'Recycled nylon stretch, quick dry', price:2399, sizes:['S','M','L','XL','XXL'], img:'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80' }
+];
+
+const igUrl = 'https://www.instagram.com/' + CONFIG.handle + '/';
+const dmUrl = 'https://ig.me/m/' + CONFIG.handle;
+
+// Product cards
+document.getElementById('grid').innerHTML = PRODUCTS.map(p => `
+  <article class="group">
+    <div class="overflow-hidden rounded-xl bg-stone">
+      <img src="${p.img}" alt="${p.name}" loading="lazy" data-fallback
+           class="aspect-[4/5] w-full object-cover transition duration-700 ease-out group-hover:scale-105">
+    </div>
+    <div class="mt-4 flex items-start justify-between gap-4">
+      <h3 class="font-serif text-2xl leading-snug">${p.name}</h3>
+      <p class="pt-1 font-semibold">${CONFIG.currency}${p.price.toLocaleString('en-IN')}</p>
+    </div>
+    <p class="mt-1 text-sm text-bark/70">${p.fabric}</p>
+    <ul class="mt-3 flex flex-wrap gap-1.5" aria-label="Available sizes">
+      ${p.sizes.map(s => `<li class="rounded-md border border-stone bg-paper px-2.5 py-1 text-xs font-medium">${s}</li>`).join('')}
+    </ul>
+    <a href="${dmUrl}" target="_blank" rel="noopener" aria-label="Buy ${p.name} via Instagram"
+       class="mt-4 block rounded-full bg-bark py-3 text-center text-sm font-medium text-linen transition hover:bg-moss">Buy via Instagram</a>
+  </article>`).join('');
+
+// Image fallback so a broken link never leaves a blank box
+document.querySelectorAll('img[data-fallback]').forEach(img => {
+  img.addEventListener('error', () => { img.style.visibility = 'hidden'; }, { once:true });
+});
+document.addEventListener('error', e => {
+  if (e.target.tagName === 'IMG') e.target.style.visibility = 'hidden';
+}, true);
+
+// Links and text from CONFIG
+document.querySelectorAll('[data-ig]').forEach(a => a.href = igUrl);
+document.querySelectorAll('[data-handle]').forEach(a => a.textContent = '@' + CONFIG.handle);
+document.querySelectorAll('[data-mail]').forEach(a => { a.href = 'mailto:' + CONFIG.email; a.textContent = CONFIG.email; });
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Sticky header blur on scroll
+const nav = document.getElementById('nav');
+const onScroll = () => {
+  const s = window.scrollY > 12;
+  nav.classList.toggle('bg-paper/80', s);
+  nav.classList.toggle('backdrop-blur-md', s);
+  nav.classList.toggle('shadow-sm', s);
+};
+onScroll();
+window.addEventListener('scroll', onScroll, { passive:true });
+
+// Mobile menu
+const btn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
+btn.addEventListener('click', () => {
+  const open = menu.classList.toggle('hidden') === false;
+  btn.setAttribute('aria-expanded', open);
+  if (open) { nav.classList.add('bg-paper/95'); } else { nav.classList.remove('bg-paper/95'); }
+});
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  menu.classList.add('hidden'); btn.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>
